@@ -2,12 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
-import { Poppins, Passions_Conflict, Rye } from "next/font/google";
+import { Poppins, Rye } from "next/font/google";
 
 
 // Load Google Fonts
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
-const passionsConflict = Passions_Conflict({ weight: ["400"], subsets: ["latin"] });
 const rye = Rye({ weight: ["400"], subsets: ["latin"] });
 
 const HeroSection: React.FC = () => {

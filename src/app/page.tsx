@@ -7,9 +7,8 @@ import Navbar from "@/components/Home/navbar";
 import Skills from "@/components/Home/skills";
 import Work from "@/components/Home/work";
 import Learn from "@/components/Home/learn";
+import Contact from "@/components/Home/contact";
 import { useEffect, useState } from "react";
-
-
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +27,7 @@ const HomePage = () => {
       <Skills />
       <Work />
       <Learn />
+      <Contact />
       <Footer />
     </div>
   );
