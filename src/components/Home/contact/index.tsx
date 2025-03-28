@@ -2,9 +2,7 @@
 import { useState } from "react";
 import { FaUser, FaEnvelope, FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Nosifer } from "next/font/google";
-
-
+import Image from "next/image";
 
 
 const ContactForm = () => {
@@ -46,14 +44,14 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-6">
+    <div id="contact" className="flex justify-center items-center min-h-screen bg-gray-100 p-6">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden">
         {/* Left Section */}
         <div className="md:w-1/2 bg-[rgb(253,246,227)] text-black p-12 flex flex-col justify-center items-center">
         <h2 className="text-3xl font-bold text-center font-[Nosifer]">
             Get in Touch
             </h2>
-          <img src="/contact.png" alt="Contact" className="w-80 mt-6" />
+          <Image src="/contact.png" alt="Contact" width={500} height={300} />
         </div>
 
         {/* Right Section - Form */}

@@ -29,6 +29,8 @@ const HomePage = () => {
       <Learn />
       <Contact />
       <Footer />
+      {/* Example usage of isModalOpen */}
+      {isModalOpen && <div className="modal"></div>}
     </div>
   );
 };

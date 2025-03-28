@@ -28,38 +28,95 @@ const Resources = () => {
   };
 
   return (
-    <div ref={containerRef} className="py-10 px-20 min-h-[70vh] relative bg-[#FDF6E3]">
-      <h2 className={`${nosifer.className} text-5xl font-bold text-center mb-10 text-gray-800`}>
+    <div ref={containerRef} className="py-10 px-10 min-h-[20vh] relative bg-[#FDF6E3]">
+      <h2 className={`${nosifer.className} text-3xl font-bold text-center mb-10 text-gray-800`}>
         📚 Learning Resources
       </h2>
       <br />
       <br />
 
-      <div className="relative max-w-9xl mx-auto overflow-hidden">
+      <div className="relative max-w-10xl mx-auto overflow-hidden">
         {/* Left Scroll Button */}
         <button
           onClick={() => scroll("left")}
           aria-label="Scroll left"
-          className="absolute left-2 top-1/2 -translate-y-1/2 p-3 rounded-full shadow-lg z-10 bg-gray-400 text-white"
+          className="absolute left-2 top-1/2 -translate-y-1/2 p-3 rounded-full shadow-lg z-10 bg-gray-400 text-black"
         >
           <FaArrowLeft size={30} />
         </button>
 
         {/* Scrollable Cards Container */}
-        <div ref={scrollRef} className="flex gap-8 overflow-x-auto scroll-smooth px-10 no-scrollbar">
+        <div ref={scrollRef} className="flex gap-10 overflow-x-auto scroll-smooth px-10 no-scrollbar">
+
           {/* Web Development Basics */}
           <motion.div
-            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
-            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
+            className="shadow-xl rounded-xxl overflow-hidden cursor-pointer relative flex-none w-74 md:w-80"
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
+            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 1000 } }}
           >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/UI Technologies.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">UI Technologies</h3>
+              <a href="/UI Technologies.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
+                <FaDownload /> Download
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Web Development Basics */}
+          <motion.div
+            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
+            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
+          >
+            <a href="/reactjs.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
+            </a>
+
+            <div className="p-5 text-center">
+              <h3 className="text-lg font-semibold text-black">React js</h3>
+              <a href="/reactjs.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300" style={{ backgroundColor: "#FDF6E3", color: "black" }}>
+                <FaDownload /> Download
+              </a>
+            </div>
+          </motion.div>
+
+
+          {/* Web Development Basics */}
+          <motion.div
+          className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
+          style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
+          whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
+        >
+          <a href="/OOPs important interview question.pdf" download>
+            <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
+          </a>
+
+          <div className="p-5 text-center">
+            <h3 className="text-lg font-semibold text-black">OOPS Concepts</h3>
+            <a href="/OOPs important interview question.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
+              <FaDownload /> Download
+            </a>
+          </div>
+        </motion.div>
+
+
+          {/* Web Development Basics */}
+          <motion.div
+            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
+            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
+          >
+            <a href="/django.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
+            </a>
+
+            <div className="p-5 text-center">
+              <h3 className="text-lg font-semibold text-black">Django</h3>
+              <a href="/django.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300" style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
@@ -69,16 +126,16 @@ const Resources = () => {
           {/* Web Development Basics */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/git.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">GIT Basics</h3>
+              <a href="/git.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
@@ -88,55 +145,34 @@ const Resources = () => {
           {/* Web Development Basics */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/api.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">API's Basics</h3>
+              <a href="/api.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
           </motion.div>
-
-
-
+        
           {/* Web Development Basics */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/js.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
-                <FaDownload /> Download
-              </a>
-            </div>
-          </motion.div>
-
-
-          {/* Web Development Basics */}
-          <motion.div
-            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
-            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
-          >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
-            </a>
-
-            <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">Java Scripts Basics</h3>
+              <a href="/js.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
@@ -146,55 +182,16 @@ const Resources = () => {
           {/* Web Development Basics */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/nodejs.pdf" download>
+              <img src="/folder.png" alt="Web Development Basics" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
-                <FaDownload /> Download
-              </a>
-            </div>
-          </motion.div>
-
-
-
-          {/* Web Development Basics */}
-          <motion.div
-            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
-            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
-          >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
-            </a>
-
-            <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
-                <FaDownload /> Download
-              </a>
-            </div>
-          </motion.div>
-
-
-          {/* Web Development Basics */}
-          <motion.div
-            className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
-            whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
-          >
-            <a href="/pdfs/web-dev-basics.pdf" download>
-              <img src="/images/web-dev.png" alt="Web Development Basics" className="w-full h-48 object-cover" loading="lazy" />
-            </a>
-
-            <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Web Development Basics</h3>
-              <a href="/pdfs/web-dev-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">Node js Basics</h3>
+              <a href="/nodejs.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
@@ -203,16 +200,16 @@ const Resources = () => {
           {/* Advanced JavaScript */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
             <a href="/pdfs/advanced-js.pdf" download>
-              <img src="/images/javascript.png" alt="Advanced JavaScript" className="w-full h-48 object-cover" loading="lazy" />
+              <img src="/folder.png" alt="Advanced JavaScript" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Advanced JavaScript</h3>
-              <a href="/pdfs/advanced-js.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">Advanced JavaScript</h3>
+              <a href="/pdfs/advanced-js.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
@@ -221,16 +218,16 @@ const Resources = () => {
           {/* Django for Beginners */}
           <motion.div
             className="shadow-xl rounded-xl overflow-hidden cursor-pointer relative flex-none w-64 md:w-72"
-            style={{ backgroundColor: "#1F2937", scrollSnapAlign: "start" }}
+            style={{ backgroundColor: "white", scrollSnapAlign: "start" }}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 200 } }}
           >
-            <a href="/pdfs/django-basics.pdf" download>
-              <img src="/images/django.png" alt="Django for Beginners" className="w-full h-48 object-cover" loading="lazy" />
+            <a href="/django.pdf" download>
+              <img src="/folder.png" alt="Django for Beginners" className="w-40 h-40 object-cover mx-auto" loading="lazy" />
             </a>
 
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-white">Django for Beginners</h3>
-              <a href="/pdfs/django-basics.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 bg-blue-500 text-white">
+              <h3 className="text-lg font-semibold text-black">Django</h3>
+              <a href="/django.pdf" download className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg transition duration-300 " style={{ backgroundColor: "#FDF6E3", color: "black" }}>
                 <FaDownload /> Download
               </a>
             </div>
