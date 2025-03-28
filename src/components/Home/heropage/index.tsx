@@ -36,13 +36,7 @@ const HeroSection: React.FC = () => {
     <section id="home" className={`hero ${poppins.className}`}>
       {/* Image Section */}
       <div ref={imgRef} className="image-container">
-        <Image
-          src="/cycle.png" // Replace with your actual image path
-          alt="Hero Image"
-          layout="responsive"
-          width={500}
-          height={500}
-        />
+      <Image src="/cycle.png" width={500} height={500} alt="Cycle Image" />np
       </div>
 
       {/* Text Section */}

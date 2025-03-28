@@ -38,7 +38,8 @@ const ContactForm = () => {
       } else {
         setError("Failed to send message. Please try again.");
       }
-    } catch (error) {
+    } catch (err) {
+      console.error("Error submitting form:", err); // Log the error to the console
       setError("An error occurred. Please check your internet connection.");
     }
   };

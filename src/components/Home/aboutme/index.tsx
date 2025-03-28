@@ -61,7 +61,7 @@ const AboutMe: React.FC = () => {
           <br />
           <br />
           Proficient in Next.js, React.js, Node.js, Django, and MySQL, I thrive
-          on challenges that push technological boundaries. Whether it's
+          on challenges that push technological boundaries. Whether it&apos;s
           optimizing database queries, integrating APIs, or enhancing UI/UX, I
           am committed to delivering innovative solutions that drive business
           success.
