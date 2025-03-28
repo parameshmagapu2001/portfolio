@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
       >
         <h2
           style={{
-            fontSize: "clamp(52px, 6vw, 68px)", // Responsive font size
+            fontSize: "clamp(42px, 4vw, 68px)", // Responsive font size
             fontWeight: "normal",
             margin: 0,
             color: "#333",
