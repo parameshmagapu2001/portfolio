@@ -5,6 +5,10 @@ import { MdOutlineArchitecture } from "react-icons/md";
 import { PiLightningBold } from "react-icons/pi";
 import { FiExternalLink } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
+import { Merienda } from "next/font/google";
+
+const merienda = Merienda({ weight: ["400", "700"], subsets: ["latin"] });
+
 
 const projects = [
 
@@ -116,14 +120,16 @@ export default function ProjectsSection() {
   return (
     <section className="bg-[rgb(254,244,214)] text-black py-20 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        <p className="text-blue-600 mb-10 text-sm uppercase tracking-wide">
-          Browse My Recent
-        </p>
-        <h2 className="text-4xl font-bold mb-4">Projects</h2>
-        <p className="text-gray-700 max-w-2xl mx-auto mb-16">
-          Here are some of the projects I&apos;ve worked on, showcasing my skills in
-          full-stack development
-        </p>
+        <p className={`${merienda.className} text-blue-600 mb-10 text-sm uppercase tracking-wide`}>
+        Browse My Recent
+      </p>
+      <h2 className={`${merienda.className} text-4xl font-bold mb-4`}>
+        Projects
+      </h2>
+      <p className={`${merienda.className} text-gray-700 max-w-2xl mx-auto mb-16`}>
+        Here are some of the projects I&apos;ve worked on, showcasing my skills in
+        full-stack development
+      </p>
         <div className="grid gap-10 md:grid-cols-2">
           {projects.map((project, idx) => (
         <div

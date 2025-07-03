@@ -4,10 +4,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { FaArrowLeft, FaArrowRight, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Nosifer } from "next/font/google";
 import Image from 'next/image';
+import { Merienda } from "next/font/google";
 
-const nosifer = Nosifer({ weight: ["400"], subsets: ["latin"] });
+const merienda = Merienda({ weight: ["400", "700"], subsets: ["latin"] });
+
 
 const Resources = () => {
   const containerRef = useRef(null);
@@ -83,10 +84,9 @@ const Resources = () => {
 
   return (
     <div ref={containerRef} className="py-10 px-10 min-h-[20vh] relative bg-[#FDF6E3]">
-      <h2 className={`${nosifer.className} text-3xl font-bold text-center mb-10 text-gray-800`}>
-        📚 Learning Resources
-      </h2>
-      <br />
+    <h2 className={`${merienda.className} text-3xl font-bold text-center mb-10 text-gray-800`}>
+      📚 Learning Resources
+    </h2>
       <br />
 
       <div className="relative max-w-10xl mx-auto overflow-hidden">

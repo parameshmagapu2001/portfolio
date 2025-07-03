@@ -5,7 +5,9 @@ import { CheckCircle } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Element } from 'react-scroll';
+import { Merienda } from "next/font/google";
 
+const merienda = Merienda({ weight: ["400", "700"], subsets: ["latin"] });
 gsap.registerPlugin(ScrollTrigger);
 
 type Skill = {
@@ -99,13 +101,18 @@ export default function Experience() {
         ref={sectionRef}
         className="bg-[rgb(253,241,206)] text-black py-20 px-4 scroll-mt-20"
       >
-        <div className="text-center mb-12">
-          <h3 className="text-sm font-bold mb-2">Explore My</h3>
-          <h2 className="text-3xl font-bold mb-2">Experience</h2>
-          <p className="font-bold max-w-xl mx-auto">
-            Here&apos;s a comprehensive overview of my technical skills and expertise in modern web development technologies
-          </p>
-        </div>
+       <div className="text-center mb-12">
+      <h3 className={`${merienda.className} text-lg font-bold mb-2`}>
+        Explore My
+      </h3>
+      <h2 className={`${merienda.className} text-4xl font-bold mb-2`}>
+        Experience
+      </h2>
+      <p className={`${merienda.className} text-lg font-normal max-w-xl mx-auto`}>
+        Here&apos;s a comprehensive overview of my technical skills and expertise in modern web development technologies
+      </p>
+    </div>
+
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillsData.map((group) => (
             <div
